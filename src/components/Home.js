@@ -76,7 +76,7 @@ useEffect(() => {
                 <option value="0">
                     Year
                 </option>
-                    {movies.search?.map((movie, index) => (
+                    {movies.Search?.map((movie, index) => (
                         <option key={index} value={movie.Year}>
                             {movie.Year}
                         </option>))
