@@ -26,15 +26,9 @@ const MovieList = ({year, page, setPage}) =>{
                 ))
                : filteredMovies.map((movie) => (
                     <Link className="link" to={`/movie/${movie.imdbID}`} >
-                            <div className="imdb">
-                                {movie.imdbID}
-                            </div>
-                            <div className="movieName">
-                                {movie.Title}
-                            </div>
-                            <div className="movieYear">
-                                {movie.Year}
-                            </div>   
+                            <div className="imdb">{movie.imdbID}</div>
+                            <div className="movieName">{movie.Title}</div>
+                            <div className="movieYear">{movie.Year}</div>   
                     </Link>
             ))
             }
