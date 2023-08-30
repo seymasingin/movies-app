@@ -1,0 +1,73 @@
+.home{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchFilter{
+    justify-content:center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.category{
+    height: 40px;
+    background: beige;
+    border: solid;
+}
+
+.movieSearch{
+    height: 33px;
+    background: beige;
+    border: solid;
+    padding-left: 5px;
+}
+
+.year{
+    height:40px;
+    background: beige;
+    border: solid;
+}
+
+.movies{
+    justify-content: center;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.headers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.idHeader{
+    width: 25%;
+    border: black;
+    border: solid;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+.nameHeader{
+    width: 50%;
+    border: black;
+    border: solid;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.yearHeader{
+    width: 30%;
+    border: black;
+    border: solid;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
