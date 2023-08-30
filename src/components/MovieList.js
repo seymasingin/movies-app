@@ -3,10 +3,11 @@ import '../styles/MovieList.css'
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {BackwardOutlined, ForwardOutlined} from "@ant-design/icons"
-import { allMovies } from "../rtk/moviesSlice";
+
 
 const MovieList = ({year, page, setPage}) =>{
-    const movies = useSelector(allMovies);
+   
+    const {movies} = useSelector(store=> store.movies)
     const filteredMovies = movies && movies.Search?.filter((movie) => movie.Year === year)
     const previousPage = () => {
         if (page > 1) {

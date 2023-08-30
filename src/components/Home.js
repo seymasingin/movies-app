@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Home.css"
 import { useDispatch, useSelector } from "react-redux";
-import { allMovies, addMovie } from "../rtk/moviesSlice";
+import { addMovie } from "../rtk/moviesSlice";
 import MovieList from "../components/MovieList"
 import axios from "axios";
 
@@ -9,7 +9,7 @@ const Home = () => {
 
 const apiKey = "7dd15e5d";
 
-const movies = useSelector(allMovies);
+const {movies} = useSelector(store=> store.movies)
 const dispatch = useDispatch();
 
 const [selectType, setSelectType] = useState(0);
