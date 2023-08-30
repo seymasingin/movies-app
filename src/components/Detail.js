@@ -28,7 +28,7 @@ const Detail = () => {
                 <h3>Writer:  {movie.Writer}</h3>
                 <h3>Actors:  {movie.Actors}</h3>
                 <h3>Year:  {movie.Year}</h3>
-                <h3>Releades:  {movie.Released}</h3>
+                <h3>Released:  {movie.Released}</h3>
                 <h3>Language:  {movie.Language}</h3>
                 <h3>Country:  {movie.Country}</h3>
                 <h3>Box Office:  {movie.BoxOffice}</h3>
